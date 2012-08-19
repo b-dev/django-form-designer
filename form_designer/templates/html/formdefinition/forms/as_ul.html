@@ -14,7 +14,7 @@
             <li class="field {% if field.errors %}errors{% endif %}{% if field.field.required %}{% if field.errors %} {% endif %}required{% endif %}">
                 {{ field.errors }}
                 <label for="{{ field.auto_id }}">{{ field.label }}</label>
-                {{ field }}
+                {{ field }}}{{ field.help_text }}
             </li>
         {% endif %}
     {% endfor %}

@@ -23,7 +23,7 @@
                 {% if not field.is_hidden %}
                     <td class="field {% if field.errors %}errors{% endif %}{% if field.field.required %}{% if field.errors %} {% endif %}required{% endif %}">
                         {{ field.errors }}
-                        {{ field }}
+                        {{ field }}}{{ field.help_text }}
                     </td>
                 {% endif %}
             {% endfor %}
