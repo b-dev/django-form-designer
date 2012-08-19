@@ -31,7 +31,7 @@ class Migration(SchemaMigration):
             log.save()
 
         # Deleting field 'FormLog.data'
-        db.delete_column('form_designer_formlog', 'data')
+        #db.delete_column('form_designer_formlog', 'data')
         db.delete_column('form_designer_formlog', 'tmp_data')
 
 
